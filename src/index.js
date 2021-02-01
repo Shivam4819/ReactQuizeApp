@@ -1,12 +1,22 @@
-import React from 'react';
+import React ,{Component}from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./assets/style.css";
 
+class Quizeebee extends Component{
+    render() {
+        return(
+            <div className="container">
+                <div className="title">Quizeebee</div>
+            </div>
+        )
+    }
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Quizeebee />
   </React.StrictMode>,
   document.getElementById('root')
 );
